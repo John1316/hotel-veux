@@ -1,0 +1,546 @@
+
+
+// Main Colors
+$maincolor : #E0AD1E;
+$secondry:#9199B6;
+$dark : #111111;
+$green-success: #21A028;
+$gray:#cccccc;
+$dark-gray:#88888899;
+
+@font-face {
+        font-family: SFNSDisplayRegular;
+        src: url('../fonts/SFNS/Display/Regular.ttf');
+}
+
+body{
+    font-family: SFNSDisplayRegular !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: SFNSDisplayRegular !important;
+
+}
+.logo-90px{
+    height: 70px;
+    margin: 10px 0;
+}
+.vh-95{
+    height: 95vh;
+}
+.h-100{
+    height: 100%;
+}
+// General
+.border-1{
+    border:1px solid rgba(0,0,0,0.3); 
+}
+.border-2{
+    border:2px solid rgba(0,0,0,0.3); 
+}
+.border-main{
+    border: 2px solid $maincolor;
+}
+.border-secondry-1{
+    border: 1px solid $secondry ;
+}
+.border-secondry-2{
+    border: 2px solid $secondry ;
+}
+.img-profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.text-secondry{
+    color: $secondry;
+}
+.navbar{
+    top: 0;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.05);
+}
+.text-main{
+    color:$maincolor !important;
+}
+.bg-main{
+    background-color: $maincolor;
+}
+.bg-orange-light{
+    background-color: $dark;
+}
+.bg-gray-light{
+    background-color: #ECECEC !important;
+}
+.text-gray-light{
+    color: #ECECEC !important;
+}
+
+
+.text-black{
+    color: #000;
+}
+.text-graylight{
+    color: $gray;
+}
+.text-darkgray{
+    color: $dark-gray;
+}
+.hr-gray
+{
+    height: 1px;
+    width: 1px;
+    background: #ccc;
+}
+.hr-gray-100
+{
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+.btn-main{
+    background-color: $maincolor;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
+.btn-outline-black{
+    border: 3px solid #fff;
+}
+.btn-outline-main{
+    color: $maincolor !important;
+    background: transparent;
+    border: 2px solid $maincolor;
+    &:hover{
+        background-color: $maincolor;
+        color: #fff!important;
+    }
+}
+.border-main
+{
+    border:2px solid $maincolor !important;
+}
+
+.badge-main{
+    background-color: $maincolor;
+    color: #fff;
+}
+
+.border-rounded
+{
+    border: 1px white solid;
+    border-radius: 10rem;
+}
+
+.border-gray
+{
+    border: 1px $gray solid;
+    border-radius: 10px;
+}
+.slider-arrows-circle-light{
+    .slick-prev{
+        background-color: #fff !important;
+    }
+    .slick-next{
+        background-color: #fff !important;
+    }
+} 
+.w-50px
+{
+    min-width: 50px;
+    max-width: 55px;
+}
+
+.nav-tabs{
+    border-bottom: 0;
+    &:hover{
+        border-bottom: 0;
+    }
+    .nav-link.active, .nav-item.show .nav-link {
+        color: #000;
+        font-weight: 900;
+        background-color: #fff;
+        border-color: #fff;
+        border-bottom:2px solid $maincolor;
+        &:hover{
+            color: #000;
+        }
+    }
+    .nav-link{
+    padding: .5rem 2rem;
+        &:hover{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+// navbar drop down registed
+.dropdown{
+    .dropdown-menu{
+        padding: 0;
+        .nav-pills .nav-link{
+            padding: 5px 20px;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            border-left: 2px solid $maincolor;
+            color: #000;
+            background-color: #fff;
+        }
+    }
+    
+}
+
+// home page index
+.navbar{
+    background-color: #2D2D2D;
+    box-shadow: none;
+    .navbar-left{
+        .navbar-brand{
+            .logo{
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+// Home page
+
+.header{
+    height: 700px;
+    background-image: linear-gradient(to left top , rgba(0,0,0,0.2) ,rgba(0,3,10,0.4) ), url(../img/background.jpg);
+    background-size: 100% 100%;
+    &__caption{
+        &--h4{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        &--h6{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+    .card{
+        .nav-pills{
+            .nav-link{
+                color: #000;
+                padding: 5px 4rem;
+                &:hover{
+                    color: #000;
+                }
+                &.active{
+                    color: #fff;
+                    background-color: $maincolor;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px)
+{   
+    .header{
+        .form-group{
+            .col-12{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .header__caption{
+        display: none;
+    }
+}
+// promotions
+.promotions{
+    &__card{
+        position: relative;
+        .ribbon {
+            width: 60px;
+            height: 45px;
+            background-color: $maincolor;
+            position: absolute;
+            right: 12px;
+            top: 0;
+        }
+
+        .ribbon:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            bottom: -23px;
+            border-left: 30px solid $maincolor;
+            border-right: 30px solid $maincolor;
+            border-bottom: 23px solid transparent;
+        }
+
+        .ribbon .ranking {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white !important;
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: $secondry;
+        }
+        img{
+            height: 246px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+        .card-body{
+            h4{
+                max-height: 110px;
+                overflow: auto;
+            }
+        }
+    }
+}
+
+// destination
+.destination{
+    .slider-arrows-circle-light{
+        .slick-prev{
+            left: -1rem;
+        }
+        .slick-next{
+            right: -1rem;
+        }
+    }
+    &__card{
+        position: relative;
+        img{
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+
+        }
+        .card-body{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            background: linear-gradient(to right bottom , rgba(255,255,255,0.8) , rgba(0,0,0,0.8));
+        }
+    }
+}
+// Reomends
+.recomends{
+    &__row{
+        img{
+            height: 330px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .recomends{
+        &__row{
+            .card{
+                img{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+// travel section
+.travel{
+    &__card{
+        img{
+            height: 380px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+.partners{
+    &__images{
+        img{
+            height: 50px;
+            width: 165px;
+        }
+    }
+}
+// start login-page
+.login-body{
+    background-image: url(../img/cover__home.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.login{
+    height: 800px;
+    background-image: url(../img/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    &__card{
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow-y: auto;
+    }
+}
+.form-login{
+    ::placeholder{
+        color: $secondry;
+    }
+    label{
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+    }
+}
+@media screen and (max-width:450px){
+    .login{
+        &__card{
+            width: 100%;
+        }
+    }
+}
+// promotions page
+.main-slider{
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .slick-prev{
+        left: 5rem;
+
+    }
+    .slick-next{
+        right: 5rem;
+    }
+    // .slick-dots li button {
+    //     // background-color: #fff;
+    // }
+}
+// booking-details
+.booking-details{
+    .slickslider{
+        img{
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .small-slider{
+        img{
+            height: 70px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+// similar-hotels
+.similar-hotels{
+    .card{
+        img{
+            width: 100%;
+            height: 280px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+// search page
+.search{
+    &__card{
+        position: relative;
+        .ribbon {
+            width: 60px;
+            height: 45px;
+            background-color: $maincolor;
+            position: absolute;
+            right: 12px;
+            top: 0;
+        }
+
+        .ribbon:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            bottom: -23px;
+            border-left: 30px solid $maincolor;
+            border-right: 30px solid $maincolor;
+            border-bottom: 23px solid transparent;
+        }
+
+        .ribbon .ranking {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white !important;
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: $secondry;
+        }
+        img{
+            height: 246px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+        .card-body{
+            h4{
+                max-height: 110px;
+                overflow: auto;
+            }
+        }
+    }
+}
+.owl-theme .owl-nav{
+    
+    .owl-prev{
+        position: absolute;
+        top: 43%;
+        left: -1.5%;
+    }
+    .owl-next{
+        position: absolute;
+        top: 43%;
+        right: -1.5%;
+    }
+}
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid rgba(0,0,0,0.5);
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 20px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 18px;
+}
+input[type="checkbox"]:checked + label:before {
+    color: $maincolor;
+    content: "\2713";
+    text-align: center;
+}
